@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        body{
+            background-image: url("images/1.png");
+        
+        }
+    .navbar{
+        width: 80vw;
+        height: 10vh;
+        background:gray;
+        margin: auto;
+    }
+    .navul1 >li{
+        height: 10vh;
+        width: 10%;
+        display: inline-block;
+        float: left;
+        text-align: center;
+        line-height: 10vh;
+        background-size: cover;
+        text-decoration: none;
+        
+    }
+    #Active{
+        background: orange;
+    }
+    .megamenu >li{
+        list-style: none;
+        height: 5vh;
+        width: 100%;
+        border: 1px dashed orange;
+        background-color: gray;
+        text-align: center;
+        line-height: 5vh;
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+    .navul1>li:hover {
+        background-color: orange;
+        color: white;
+    }
+    .megamenu>li:hover{
+        background: orange;
+    }
+    .megamenu{
+        display: none;
+    }
+    .megamenup:hover >ul{
+ display: block;
+    }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="navul1">
+            <li>Company-logo</li>
+            <li id="Active">Active</li>
+            <li class="megamenup">Mega menu  
+                <ul class="megamenu">
+                    <li>item one</li>
+                    <li>item two</li>
+                    <li>item two</li>
+                    <li>item two</li>
+
+                </ul>
+            </li>
+            <li class="megamenup">Grid
+                <ul class="megamenu">
+                    <li>item one</li>
+                    <li>item two</li>
+                    <li>item two</li>
+                    <li>item two</li>
+
+                </ul>
+            </li>
+            <li class="megamenup">Tab bar
+                <ul class="megamenu">
+                    <li>item one</li>
+                    <li>item two</li>
+                    <li>item two</li>
+                    <li>item two</li>
+
+                </ul>
+            </li>
+            <li>Images</li>
+            <li>Contact-us</li>
+        </ul>
+    </nav>
+    <h1>hello</h1>
+</body>
+</html>
